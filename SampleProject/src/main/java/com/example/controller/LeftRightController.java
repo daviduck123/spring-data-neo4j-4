@@ -44,14 +44,17 @@ public class LeftRightController {
 		ParentClass parentClass = new ParentClass("Parent Left");
 		parentClassService.save(parentClass);
 
+		//I already create Parent Class and then I put it on Left Class
 		Left left = new Left("Left", parentClass);
 		leftService.save(left);
 
+		//Left Class should be have ParentClass already
 		LeftRight leftRight = new LeftRight(left, right);
 		leftRightService.save(leftRight);
 
-		List<LeftRight> error = leftRightService.findByLeftParentId(parentClass.getId());
-		return error;
+		//return empty list
+		List<LeftRight> list = leftRightService.findByLeftParentId(parentClass.getId());
+		return list;
 
 	}
 

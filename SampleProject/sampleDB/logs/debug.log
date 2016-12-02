@@ -355,3 +355,13 @@ Storage files: (filename : modification date - size)
 2016-12-02 05:47:02.344+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
 2016-12-02 05:47:02.776+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 258ms.
 2016-12-02 05:47:03.028+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
+2016-12-02 05:52:02.272+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14]:  Starting check pointing...
+2016-12-02 05:52:02.272+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14]:  Starting store flush...
+2016-12-02 05:52:02.394+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14 to [D:\NFS PROJECT\SampleProject\sampleDB\neostore.counts.db.b], from [D:\NFS PROJECT\SampleProject\sampleDB\neostore.counts.db.a].
+2016-12-02 05:52:02.404+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14 to [D:\NFS PROJECT\SampleProject\sampleDB\neostore.counts.db.b], from [D:\NFS PROJECT\SampleProject\sampleDB\neostore.counts.db.a].
+2016-12-02 05:52:02.668+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14]:  Store flush completed
+2016-12-02 05:52:02.668+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14]:  Starting appending check point entry into the tx log...
+2016-12-02 05:52:02.687+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14]:  Appending check point entry into the tx log completed
+2016-12-02 05:52:02.687+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14]:  Check pointing completed
+2016-12-02 05:52:02.687+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-12-02 05:52:02.687+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
