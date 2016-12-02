@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,9 +53,22 @@ public class LeftRightController {
 		LeftRight leftRight = new LeftRight(left, right);
 		leftRightService.save(leftRight);
 
+		//Sample 1
 		//return empty list
 		List<LeftRight> list = leftRightService.findByLeftParentId(parentClass.getId());
+		
+		//Sample 2
+		List<Left> listLeft = leftService.findAll();
+		List<String> listId = new ArrayList<>();
+		for(Left object : listLeft){
+			listId.add(object.getId());
+		}
+		
+		//return empty list too
+		List<LeftRight> list2 = leftRightService.findByLeftId(listId);
 		return list;
+		
+		//Those two methods that I use in SDN3, but its not work in SDN4
 
 	}
 
